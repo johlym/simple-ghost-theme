@@ -1,0 +1,7 @@
+<ul class="smaller-navigation-links">
+    {{#foreach navigation}}
+        <li class="smaller-navigation-link nav-{{slug}}{{#if current}} smaller-navigation-link-current{{/if}}">
+        <a href="{{url absolute="true"}}">{{label}}</a>
+        </li>
+    {{/foreach}}
+</ul>
