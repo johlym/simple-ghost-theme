@@ -25,7 +25,7 @@ body {
 }
 
 .main {
-    padding-top: 120px;
+    padding-top: 140px;
     font-size: 1.0em;
     margin-left: 33%;
     margin-right: 2%;
@@ -64,8 +64,12 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0; }
     font-size: 4.0rem;
     font-weight: normal;
     font-family: monospace;
-    height: 80px;
     margin-bottom: 0;
+}
+#quote {
+    height: 60px;
+    font-size: 0.85em;
+    color: #999;
 }
 
 .site-title a {
@@ -345,5 +349,10 @@ a.prev-next-link {
     .icon-ghost {
         vertical-align: middle;
         font-size: 0.75em;
+    }
+    #quote2 {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+        color: #999;
     }
 }
