@@ -1,0 +1,23 @@
+{{#foreach posts}}
+<article class="{{post_class}}">
+<header class="post-header">
+    {{#if feature_image}}
+    <img class="header-image" src="{{feature_image}}" border="0"/>
+    {{/if}}
+    <h1 class="post-title">
+       <a href="{{url}}">{{title}}</a>
+    </h1>
+    <time class="metadata" datetime="{{date format="YYYY-MM-DD"}}">
+        {{date format="MMMM DD, YYYY"}} | <span class="reading-time"></span>
+    </time>
+</header>
+
+    {{content}}
+</article>
+<hr class="post-divider-top" />
+<div class="tiny-divider-text">x</div>
+<hr class="post-divider-bottom" />
+
+{{/foreach}}
+
+{{pagination}}

@@ -1,0 +1,9 @@
+<div class="prev-next">
+    {{#if prev}}
+        <div class="prev-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i> <a class="prev-next-link" href="{{page_url prev}}">Previous</a></div>
+    {{/if}}
+    <div class="prev-next-text">page {{page}} of {{pages}}</div>
+    {{#if next}}
+        <div class="next-arrow"><a class="prev-next-link" href="{{page_url next}}">Next</a> <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+    {{/if}}
+</div>

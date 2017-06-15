@@ -1,0 +1,38 @@
+{{#get "posts" limit="10" as |recents|}}
+<div class="widget">
+<h3 class="widget-title">
+   <i class="fa fa-file-text-o" aria-hidden="true"></i> Recent Writing
+</h3>
+<div class="widget-body">
+    <ul class="recent">
+        {{#foreach recents}}
+        <li class="recent-link"><a href="{{url}}">{{title}}</a></li>
+        {{/foreach}}
+    </ul>
+</div>
+</div>
+{{/get}}
+
+{{#get "posts" filter="tags:book" limit="20" as |recentsbooks|}}
+<div class="widget">
+<h3 class="widget-title">
+   <i class="fa fa-book" aria-hidden="true"></i> On Books
+</h3>
+<div class="widget-body">
+    <ul class="recent">
+        {{#foreach recentsbooks}}
+        <li class="recent-link"><a href="{{url}}">{{title}}</a></li>
+        {{/foreach}}
+    </ul>
+</div>
+</div>
+{{/get}}
+
+<div class="widget-copyright">
+    <div class="widget-body-copyright">
+        &copy; 2014-{{date format="YYYY"}}<br />
+        Johnathan Lyman<br />
+        All rights reserved.<br />
+        Powered by <a class="icon-ghost" href="//ghost.org"> Ghost</a>.
+    </div>
+</div>

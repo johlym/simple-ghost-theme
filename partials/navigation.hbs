@@ -1,0 +1,14 @@
+<div class="widget-navigation">
+    <h3 class="widget-navigation-title">
+       <i class="fa fa-bars" aria-hidden="true"></i> Navigation
+    </h3>
+    <div class="widget-body widget-navigation-body">
+        <ul class="navigation">
+            {{#foreach navigation}}
+                <li class="navigation-link nav-{{slug}}{{#if current}} navigation-link-current{{/if}}">
+                <a href="{{url absolute="true"}}">{{label}}</a>
+                </li>
+            {{/foreach}}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{{!< default}}
+
+{{#post}}
+<article class="{{post_class}}">
+<header class="post-header">
+    {{#if feature_image}}
+    <img class="header-image" src="{{feature_image}}" border="0"/>
+    {{/if}}
+        <h1 class="post-title">
+       <a href="{{url}}">{{title}}</a>
+    </h1>
+    <time class="metadata" datetime="{{date format="YYYY-MM-DD"}}">
+        {{date format="MMMM DD, YYYY"}} | <span class="reading-time"></span>
+    </time>
+</header>
+
+    {{content}}
+</article>
+{{/post}}
+{{#get "posts" limit="5" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags" as |relatedposts|}}
+<div class="related-posts">
+    <div class="related-posts-heading">Related Posts</div>
+    {{#foreach relatedposts}}
+        <div class="related-post">
+            <strong><a href="{{url}}">{{title}}</a></strong>
+        </div>
+    {{/foreach}}
+</div>
+{{/get}}
