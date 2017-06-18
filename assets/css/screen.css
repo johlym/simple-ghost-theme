@@ -200,31 +200,11 @@ li.footnote-item p {
 
 .post-divider-top {
     margin-top: 30px;
-    margin-bottom: 0;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: #f0f0f0 !important; 
-}
-
-.tiny-divider-text {
-    font-size: 0.7em;
-    font-family: monospace;
-    text-align: center;
-    color: #f0f0f0 !important;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.post-divider-bottom {
-    margin-top: 0;
     margin-bottom: 80px;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    color: #f0f0f0 !important;
+    color: #f0f0f0 !important; 
 }
 
 .prev-next {
